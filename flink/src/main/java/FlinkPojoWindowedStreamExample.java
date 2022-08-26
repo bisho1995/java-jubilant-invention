@@ -14,8 +14,10 @@ import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
 
 import javax.annotation.Nullable;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.UUID;
 
 public class FlinkPojoWindowedStreamExample {
@@ -38,6 +40,10 @@ public class FlinkPojoWindowedStreamExample {
         Payload p1 = Payload.builder().id(UUID.randomUUID().toString()).build();
         Payload p2 = Payload.builder().id("2").build();
 
+        InputStream propertiesStream = MainFlink.class.getClassLoader().getResourceAsStream("EventWindows/flink.properties");
+        Properties properties = new Properties();
+        properties.load(propertiesStream);
+
         environment
                 .fromElements(p1,p2)
                 .assignTimestampsAndWatermarks(new AssignerWithPeriodicWatermarks<>() {
@@ -57,7 +63,7 @@ public class FlinkPojoWindowedStreamExample {
                     }
                 })
                 .name("assigned-timestamps-and-watermarks")
-                .windowAll(TumblingEventTimeWindows.of(Time.seconds(2)))
+                .windowAll(TumblingEventTimeWindows.of(Time.seconds(Long.parseLong(properties.getProperty("flink.window.interval")))))
                 .apply(new AllWindowFunction<Payload, List<Payload>, TimeWindow>() {
                     @Override
                     public void apply(TimeWindow timeWindow, Iterable<Payload> iterable, Collector<List<Payload>> collector) throws Exception {

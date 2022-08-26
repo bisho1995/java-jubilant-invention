@@ -1,6 +1,7 @@
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks;
+import org.apache.flink.streaming.api.functions.timestamps.AscendingTimestampExtractor;
 import org.apache.flink.streaming.api.functions.windowing.AllWindowFunction;
 import org.apache.flink.streaming.api.watermark.Watermark;
 import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
@@ -21,20 +22,10 @@ public class FlinkSimpleWindowedEventStreamExample {
 
         environment
                 .fromElements(2,3,5)
-                .assignTimestampsAndWatermarks(new AssignerWithPeriodicWatermarks<>() {
-                    private long timestamp = 0;
-
-                    @Nullable
+                .assignTimestampsAndWatermarks(new AscendingTimestampExtractor<Integer>() {
                     @Override
-                    public Watermark getCurrentWatermark() {
-                        return new Watermark(timestamp);
-                    }
-
-                    @Override
-                    public long extractTimestamp(Integer payload, long l) {
-                        timestamp = System.currentTimeMillis();
-
-                        return timestamp;
+                    public long extractAscendingTimestamp(Integer integer) {
+                        return System.currentTimeMillis();
                     }
                 })
                 .name("assigned-timestamps-and-watermarks")
