@@ -1,4 +1,6 @@
 import org.apache.flink.streaming.api.TimeCharacteristic;
+import org.apache.flink.streaming.api.datastream.DataStreamSource;
+import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.timestamps.AscendingTimestampExtractor;
 import org.apache.flink.streaming.api.functions.windowing.AllWindowFunction;
@@ -13,35 +15,51 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FlinkSimpleWindowedEventStreamExample {
-    private static Logger logger = LoggerFactory.getLogger(FlinkSimpleWindowedEventStreamExample.class);
+    private static final Logger logger = LoggerFactory.getLogger(FlinkSimpleWindowedEventStreamExample.class);
+
+    private static final AscendingTimestampExtractor<Integer> ascendingTimestampExtractor = new AscendingTimestampExtractor<>() {
+        @Override
+        public long extractAscendingTimestamp(Integer integer) {
+            return System.currentTimeMillis();
+        }
+    };
+
+    private static final AllWindowFunction<Integer, List<Integer>, TimeWindow> allWindowFunction = new AllWindowFunction<>() {
+        @Override
+        public void apply(TimeWindow timeWindow, Iterable<Integer> iterable, Collector<List<Integer>> collector) throws Exception {
+            List<Integer> list = new ArrayList<>();
+            for (Integer p : iterable) {
+                list.add(p);
+            }
+
+            collector.collect(list);
+        }
+    };
+
     public static void init() throws Exception {
+
+        StreamExecutionEnvironment env = getEnvironment();
+
+        DataStreamSource<Integer> stream = env.fromElements(2, 3, 5, 10, 11, 12, 4, 1, 2, 55, 1);
+        processStream(stream).print();
+        env.execute();
+
+    }
+
+    static SingleOutputStreamOperator<List<Integer>> processStream(DataStreamSource<Integer> stream) {
+        return stream
+                .assignTimestampsAndWatermarks(ascendingTimestampExtractor)
+                .name("assigned-timestamps-and-watermarks")
+                .windowAll(TumblingEventTimeWindows.of(Time.seconds(2)))
+                .apply(allWindowFunction);
+
+
+    }
+
+    static StreamExecutionEnvironment getEnvironment() {
         StreamExecutionEnvironment environment = StreamExecutionEnvironment.getExecutionEnvironment();
         environment.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
 
-
-        environment
-                .fromElements(2,3,5,10,11,12,4,1,2,55,1)
-                .assignTimestampsAndWatermarks(new AscendingTimestampExtractor<Integer>() {
-                    @Override
-                    public long extractAscendingTimestamp(Integer integer) {
-                        return System.currentTimeMillis();
-                    }
-                })
-                .name("assigned-timestamps-and-watermarks")
-                .windowAll(TumblingEventTimeWindows.of(Time.seconds(2)))
-                .apply(new AllWindowFunction<Integer, List<Integer>, TimeWindow>() {
-                    @Override
-                    public void apply(TimeWindow timeWindow, Iterable<Integer> iterable, Collector<List<Integer>> collector) throws Exception {
-                        List<Integer> list = new ArrayList<>();
-                        for(Integer p: iterable) {
-                            list.add(p);
-                        }
-
-                        collector.collect(list);
-                    }
-                })
-                .print();
-
-        environment.execute();
+        return environment;
     }
 }
