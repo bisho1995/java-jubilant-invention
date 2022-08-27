@@ -6,6 +6,7 @@ import lombok.ToString;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks;
+import org.apache.flink.streaming.api.functions.timestamps.AscendingTimestampExtractor;
 import org.apache.flink.streaming.api.functions.windowing.AllWindowFunction;
 import org.apache.flink.streaming.api.watermark.Watermark;
 import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
@@ -27,6 +28,8 @@ public class FlinkPojoWindowedStreamExample {
     @Setter
     @ToString
     public static class Payload {
+        private transient final String driverId;
+
         @SerializedName("Barrier_Free")
         private final String barrier_free = "No";
 
@@ -37,8 +40,8 @@ public class FlinkPojoWindowedStreamExample {
         StreamExecutionEnvironment environment = StreamExecutionEnvironment.getExecutionEnvironment();
         environment.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
 
-        Payload p1 = Payload.builder().id(UUID.randomUUID().toString()).build();
-        Payload p2 = Payload.builder().id("2").build();
+        Payload p1 = Payload.builder().id(UUID.randomUUID().toString()).driverId(UUID.randomUUID().toString()).build();
+        Payload p2 = Payload.builder().id(UUID.randomUUID().toString()).driverId(UUID.randomUUID().toString()).build();
 
         InputStream propertiesStream = MainFlink.class.getClassLoader().getResourceAsStream("EventWindows/flink.properties");
         Properties properties = new Properties();
@@ -46,20 +49,10 @@ public class FlinkPojoWindowedStreamExample {
 
         environment
                 .fromElements(p1,p2)
-                .assignTimestampsAndWatermarks(new AssignerWithPeriodicWatermarks<>() {
-                    private long timestamp = 0;
-
-                    @Nullable
+                .assignTimestampsAndWatermarks(new AscendingTimestampExtractor<Payload>() {
                     @Override
-                    public Watermark getCurrentWatermark() {
-                        return new Watermark(timestamp);
-                    }
-
-                    @Override
-                    public long extractTimestamp(Payload payload, long l) {
-                        timestamp = System.currentTimeMillis();
-
-                        return timestamp;
+                    public long extractAscendingTimestamp(Payload payload) {
+                        return System.currentTimeMillis();
                     }
                 })
                 .name("assigned-timestamps-and-watermarks")

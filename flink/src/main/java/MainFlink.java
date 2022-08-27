@@ -6,9 +6,9 @@ import java.util.Properties;
 @Slf4j
 public class MainFlink {
     public static void main(String[] args) throws Exception {
-//        FlinkPojoWindowedStreamExample.init();
+        FlinkPojoWindowedStreamExample.init();
 //        FlinkSimpleWindowedEventStreamExample.init();
 
-        System.out.println(System.getProperties());
+//        System.out.println(System.getProperties());
     }
 }
