@@ -24,3 +24,205 @@
 2022-08-28 20:52:16.389  INFO 64218 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-08-28 20:52:16.391  INFO 64218 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2022-08-28 20:52:16.420  INFO 64218 --- [http-nio-8080-exec-1] s.p.s.controllers.ProductRestController  : Searching all the products
+2022-08-28 20:59:37.311  INFO 64218 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 20:59:37.312  INFO 64218 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-28 20:59:37.315  INFO 64218 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-28 20:59:37.319  INFO 64218 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-28 20:59:42.202  INFO 65692 --- [main] s.practice.springrest.MainApplication    : Starting MainApplication using Java 11.0.15 on bisvarup-mukherjee-C02FX4EYMD6R with PID 65692 (/Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects/spring/spring-boot-practice/spring-rest/target/classes started by bisvarup.mukherjee in /Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects)
+2022-08-28 20:59:42.206  INFO 65692 --- [main] s.practice.springrest.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-28 20:59:43.279  INFO 65692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-28 20:59:43.335  INFO 65692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-08-28 20:59:43.944  INFO 65692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-28 20:59:43.958  INFO 65692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-28 20:59:43.959  INFO 65692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-28 20:59:44.051  INFO 65692 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-28 20:59:44.051  INFO 65692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1736 ms
+2022-08-28 20:59:44.349  INFO 65692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-28 20:59:44.573  INFO 65692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-28 20:59:44.630  INFO 65692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-28 20:59:44.674  INFO 65692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-28 20:59:44.825  INFO 65692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-28 20:59:44.946  INFO 65692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-28 20:59:45.423  INFO 65692 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-28 20:59:45.429  INFO 65692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 20:59:45.720  WARN 65692 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-28 20:59:46.124  INFO 65692 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-28 20:59:46.162  INFO 65692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2022-08-28 20:59:46.175  INFO 65692 --- [main] s.practice.springrest.MainApplication    : Started MainApplication in 4.505 seconds (JVM running for 4.981)
+2022-08-28 20:59:55.559  INFO 65692 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [_ua={"session_id":"f19a4a3c-c100-47cb-a082-91696d701716","session_time_ms":1642830376561};] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-08-28 20:59:55.578  INFO 65692 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 20:59:55.578  INFO 65692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-28 20:59:55.581  INFO 65692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-08-28 21:02:39.950  INFO 65692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:02:39.951  INFO 65692 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-28 21:02:39.956  INFO 65692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-28 21:02:39.959  INFO 65692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-28 21:02:42.406  INFO 65788 --- [main] s.practice.springrest.MainApplication    : Starting MainApplication using Java 11.0.15 on bisvarup-mukherjee-C02FX4EYMD6R with PID 65788 (/Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects/spring/spring-boot-practice/spring-rest/target/classes started by bisvarup.mukherjee in /Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects)
+2022-08-28 21:02:42.409  INFO 65788 --- [main] s.practice.springrest.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-28 21:02:43.379  INFO 65788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-28 21:02:43.431  INFO 65788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2022-08-28 21:02:44.141  INFO 65788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-28 21:02:44.157  INFO 65788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-28 21:02:44.158  INFO 65788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-28 21:02:44.345  INFO 65788 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-28 21:02:44.345  INFO 65788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1858 ms
+2022-08-28 21:02:44.664  INFO 65788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-28 21:02:44.918  INFO 65788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-28 21:02:44.978  INFO 65788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-28 21:02:45.032  INFO 65788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-28 21:02:45.205  INFO 65788 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-28 21:02:45.328  INFO 65788 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-28 21:02:45.821  INFO 65788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-28 21:02:45.828  INFO 65788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:02:46.157  WARN 65788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-28 21:02:46.585  INFO 65788 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-28 21:02:46.624  INFO 65788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2022-08-28 21:02:46.639  INFO 65788 --- [main] s.practice.springrest.MainApplication    : Started MainApplication in 4.699 seconds (JVM running for 5.15)
+2022-08-28 21:02:53.548  INFO 65788 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [_ua={"session_id":"f19a4a3c-c100-47cb-a082-91696d701716","session_time_ms":1642830376561};] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-08-28 21:02:53.556  INFO 65788 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 21:02:53.556  INFO 65788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-28 21:02:53.557  INFO 65788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-28 21:03:08.526  INFO 65788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:03:08.527  INFO 65788 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-28 21:03:08.531  INFO 65788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-28 21:03:08.534  INFO 65788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-28 21:03:11.111  INFO 66217 --- [main] s.practice.springrest.MainApplication    : Starting MainApplication using Java 11.0.15 on bisvarup-mukherjee-C02FX4EYMD6R with PID 66217 (/Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects/spring/spring-boot-practice/spring-rest/target/classes started by bisvarup.mukherjee in /Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects)
+2022-08-28 21:03:11.115  INFO 66217 --- [main] s.practice.springrest.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-28 21:03:12.157  INFO 66217 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-28 21:03:12.224  INFO 66217 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2022-08-28 21:03:12.971  INFO 66217 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-28 21:03:12.985  INFO 66217 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-28 21:03:12.986  INFO 66217 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-28 21:03:13.091  INFO 66217 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-28 21:03:13.091  INFO 66217 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1839 ms
+2022-08-28 21:03:13.430  INFO 66217 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-28 21:03:13.675  INFO 66217 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-28 21:03:13.728  INFO 66217 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-28 21:03:13.772  INFO 66217 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-28 21:03:13.930  INFO 66217 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-28 21:03:14.115  INFO 66217 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-28 21:03:14.652  INFO 66217 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-28 21:03:14.662  INFO 66217 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:03:14.997  WARN 66217 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-28 21:03:15.473  INFO 66217 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-28 21:03:15.510  INFO 66217 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2022-08-28 21:03:15.523  INFO 66217 --- [main] s.practice.springrest.MainApplication    : Started MainApplication in 4.978 seconds (JVM running for 5.506)
+2022-08-28 21:03:18.779  INFO 66217 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [_ua={"session_id":"f19a4a3c-c100-47cb-a082-91696d701716","session_time_ms":1642830376561};] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-08-28 21:03:18.786  INFO 66217 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 21:03:18.786  INFO 66217 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-28 21:03:18.787  INFO 66217 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-28 21:07:42.184  INFO 66217 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:07:42.185  INFO 66217 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-28 21:07:42.189  INFO 66217 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-28 21:07:42.195  INFO 66217 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-28 21:07:46.116  INFO 67465 --- [main] s.practice.springrest.MainApplication    : Starting MainApplication using Java 11.0.15 on bisvarup-mukherjee-C02FX4EYMD6R with PID 67465 (/Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects/spring/spring-boot-practice/spring-rest/target/classes started by bisvarup.mukherjee in /Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects)
+2022-08-28 21:07:46.120  INFO 67465 --- [main] s.practice.springrest.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-28 21:07:46.944  INFO 67465 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-28 21:07:46.988  INFO 67465 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2022-08-28 21:07:47.722  INFO 67465 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-28 21:07:47.749  INFO 67465 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-28 21:07:47.750  INFO 67465 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-28 21:07:47.890  INFO 67465 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-28 21:07:47.891  INFO 67465 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1690 ms
+2022-08-28 21:07:48.221  INFO 67465 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-28 21:07:48.467  INFO 67465 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-28 21:07:48.523  INFO 67465 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-28 21:07:48.573  INFO 67465 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-28 21:07:48.755  INFO 67465 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-28 21:07:48.896  INFO 67465 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-28 21:07:49.491  INFO 67465 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-28 21:07:49.500  INFO 67465 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:07:49.933  WARN 67465 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-28 21:07:50.622  INFO 67465 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-28 21:07:50.704  INFO 67465 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2022-08-28 21:07:50.728  INFO 67465 --- [main] s.practice.springrest.MainApplication    : Started MainApplication in 5.135 seconds (JVM running for 5.619)
+2022-08-28 21:07:55.725  INFO 67465 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [_ua={"session_id":"f19a4a3c-c100-47cb-a082-91696d701716","session_time_ms":1642830376561};] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-08-28 21:07:55.732  INFO 67465 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 21:07:55.732  INFO 67465 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-28 21:07:55.733  INFO 67465 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-28 21:09:03.004  INFO 67465 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:09:03.004  INFO 67465 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-28 21:09:03.009  INFO 67465 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-28 21:09:03.013  INFO 67465 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-28 21:09:05.142  INFO 68869 --- [main] s.practice.springrest.MainApplication    : Starting MainApplication using Java 11.0.15 on bisvarup-mukherjee-C02FX4EYMD6R with PID 68869 (/Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects/spring/spring-boot-practice/spring-rest/target/classes started by bisvarup.mukherjee in /Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects)
+2022-08-28 21:09:05.145  INFO 68869 --- [main] s.practice.springrest.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-28 21:09:05.981  INFO 68869 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-28 21:09:06.035  INFO 68869 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2022-08-28 21:09:06.591  INFO 68869 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-28 21:09:06.683  INFO 68869 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1462 ms
+2022-08-28 21:09:06.907  INFO 68869 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-28 21:09:07.093  INFO 68869 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-28 21:09:07.157  INFO 68869 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-28 21:09:07.202  INFO 68869 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-28 21:09:07.354  INFO 68869 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-28 21:09:07.475  INFO 68869 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-28 21:09:07.979  INFO 68869 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-28 21:09:07.988  INFO 68869 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:09:08.432  WARN 68869 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-28 21:09:08.891  INFO 68869 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-28 21:09:08.934  INFO 68869 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2022-08-28 21:09:08.951  INFO 68869 --- [main] s.practice.springrest.MainApplication    : Started MainApplication in 4.172 seconds (JVM running for 4.54)
+2022-08-28 21:09:10.977  INFO 68869 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:09:10.978  INFO 68869 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-28 21:09:10.986  INFO 68869 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-28 21:09:10.993  INFO 68869 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-28 21:09:13.140  INFO 68877 --- [main] s.practice.springrest.MainApplication    : Starting MainApplication using Java 11.0.15 on bisvarup-mukherjee-C02FX4EYMD6R with PID 68877 (/Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects/spring/spring-boot-practice/spring-rest/target/classes started by bisvarup.mukherjee in /Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects)
+2022-08-28 21:09:13.144  INFO 68877 --- [main] s.practice.springrest.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-28 21:09:13.871  INFO 68877 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-28 21:09:13.916  INFO 68877 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2022-08-28 21:09:14.371  INFO 68877 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-28 21:09:14.381  INFO 68877 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-28 21:09:14.382  INFO 68877 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-28 21:09:14.466  INFO 68877 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-28 21:09:14.466  INFO 68877 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1256 ms
+2022-08-28 21:09:14.731  INFO 68877 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-28 21:09:14.915  INFO 68877 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-28 21:09:14.964  INFO 68877 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-28 21:09:15.005  INFO 68877 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-28 21:09:15.150  INFO 68877 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-28 21:09:15.265  INFO 68877 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-28 21:09:15.709  INFO 68877 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-28 21:09:15.715  INFO 68877 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:09:15.996  WARN 68877 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-28 21:09:16.403  INFO 68877 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-28 21:09:16.444  INFO 68877 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2022-08-28 21:09:16.460  INFO 68877 --- [main] s.practice.springrest.MainApplication    : Started MainApplication in 3.725 seconds (JVM running for 4.116)
+2022-08-28 21:09:18.057  INFO 68877 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [_ua={"session_id":"f19a4a3c-c100-47cb-a082-91696d701716","session_time_ms":1642830376561};] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-08-28 21:09:18.065  INFO 68877 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 21:09:18.065  INFO 68877 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-28 21:09:18.066  INFO 68877 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-08-28 21:09:38.908  INFO 68877 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:09:38.908  INFO 68877 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-08-28 21:09:38.912  INFO 68877 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-28 21:09:38.916  INFO 68877 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-28 21:09:40.965  INFO 68888 --- [main] s.practice.springrest.MainApplication    : Starting MainApplication using Java 11.0.15 on bisvarup-mukherjee-C02FX4EYMD6R with PID 68888 (/Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects/spring/spring-boot-practice/spring-rest/target/classes started by bisvarup.mukherjee in /Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects)
+2022-08-28 21:09:40.967  INFO 68888 --- [main] s.practice.springrest.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-28 21:09:41.695  INFO 68888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-28 21:09:41.737  INFO 68888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2022-08-28 21:09:42.251  INFO 68888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-28 21:09:42.262  INFO 68888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-28 21:09:42.262  INFO 68888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-28 21:09:42.341  INFO 68888 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-28 21:09:42.355  INFO 68888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1334 ms
+2022-08-28 21:09:42.639  INFO 68888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-28 21:09:42.853  INFO 68888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-28 21:09:42.904  INFO 68888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-28 21:09:42.940  INFO 68888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-28 21:09:43.071  INFO 68888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-28 21:09:43.173  INFO 68888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-28 21:09:43.694  INFO 68888 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-28 21:09:43.702  INFO 68888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 21:09:44.035  WARN 68888 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-28 21:09:44.502  INFO 68888 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-08-28 21:09:44.544  INFO 68888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2022-08-28 21:09:44.560  INFO 68888 --- [main] s.practice.springrest.MainApplication    : Started MainApplication in 3.971 seconds (JVM running for 4.38)
+2022-08-28 21:09:48.649  INFO 68888 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [_ua={"session_id":"f19a4a3c-c100-47cb-a082-91696d701716","session_time_ms":1642830376561};] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-08-28 21:09:48.655  INFO 68888 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 21:09:48.655  INFO 68888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-28 21:09:48.656  INFO 68888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
