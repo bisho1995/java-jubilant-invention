@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import spring.practice.springrest.entities.Product;
 import spring.practice.springrest.repositories.ProductRepository;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -28,12 +29,12 @@ public class ProductRestController {
     }
 
     @RequestMapping(value = "/products/", method = RequestMethod.POST)
-    public Product createProduct(@RequestBody Product product){
+    public Product createProduct(@Valid @RequestBody Product product){
         return productRepository.save(product);
     }
 
     @RequestMapping(value = "/products/", method = RequestMethod.PUT)
-    public Product updateProduct(@RequestBody Product product){
+    public Product updateProduct(@Valid @RequestBody Product product){
         return productRepository.save(product);
     }
 
