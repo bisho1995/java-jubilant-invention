@@ -1,0 +1,26 @@
+2022-08-28 20:51:55.551  INFO 64218 --- [main] s.practice.springrest.MainApplication    : Starting MainApplication using Java 11.0.15 on bisvarup-mukherjee-C02FX4EYMD6R with PID 64218 (/Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects/spring/spring-boot-practice/spring-rest/target/classes started by bisvarup.mukherjee in /Users/bisvarup.mukherjee/Desktop/personal/java/java-practice-projects)
+2022-08-28 20:51:55.554  INFO 64218 --- [main] s.practice.springrest.MainApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-08-28 20:51:56.268  INFO 64218 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-28 20:51:56.307  INFO 64218 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2022-08-28 20:51:56.878  INFO 64218 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-28 20:51:56.890  INFO 64218 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-28 20:51:56.890  INFO 64218 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-28 20:51:56.984  INFO 64218 --- [main] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring embedded WebApplicationContext
+2022-08-28 20:51:56.984  INFO 64218 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1342 ms
+2022-08-28 20:51:57.124  INFO 64218 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-28 20:51:57.342  INFO 64218 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-28 20:51:57.388  INFO 64218 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-28 20:51:57.426  INFO 64218 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-28 20:51:57.549  INFO 64218 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-28 20:51:57.663  INFO 64218 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-08-28 20:51:58.094  INFO 64218 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-28 20:51:58.100  INFO 64218 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-28 20:51:58.388  WARN 64218 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-28 20:51:58.737  INFO 64218 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api/v1'
+2022-08-28 20:51:58.746  INFO 64218 --- [main] s.practice.springrest.MainApplication    : Started MainApplication in 3.608 seconds (JVM running for 4.078)
+2022-08-28 20:52:16.381  INFO 64218 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [_ua={"session_id":"f19a4a3c-c100-47cb-a082-91696d701716","session_time_ms":1642830376561};] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-08-28 20:52:16.388  INFO 64218 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/api/v1]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-28 20:52:16.389  INFO 64218 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-28 20:52:16.391  INFO 64218 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-28 20:52:16.420  INFO 64218 --- [http-nio-8080-exec-1] s.p.s.controllers.ProductRestController  : Searching all the products

@@ -1,5 +1,7 @@
 package spring.practice.springrest.controllers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import spring.practice.springrest.entities.Product;
@@ -10,11 +12,13 @@ import java.util.List;
 @RestController
 //@RequestMapping(value = "/products/")
 public class ProductRestController {
+    public static final Logger logger = LoggerFactory.getLogger(ProductRestController.class);
     @Autowired
     private ProductRepository productRepository;
 
     @RequestMapping(value = "/products/", method = RequestMethod.GET)
     public List<Product> getProducts(){
+        logger.info("Searching all the products");
         return productRepository.findAll();
     }
 
