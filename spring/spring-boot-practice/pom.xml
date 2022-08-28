@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-data-jpa</module>
+        <module>spring-rest</module>
     </modules>
 
     <properties>
