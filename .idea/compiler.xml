@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="flink" />
         <module name="spring-data-jpa" />
+        <module name="practice" />
         <module name="spring-rest" />
         <module name="random-practice" />
         <module name="condutor-kafka" />
