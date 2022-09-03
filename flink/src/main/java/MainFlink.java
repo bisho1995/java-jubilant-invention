@@ -9,7 +9,7 @@ public class MainFlink {
         FlinkSimpleWindowedEventStreamExample.init();
 //        FlinkPojoWindowedStreamExample.init();
 //        FlinkSimpleWindowedTriggerExample.init();
-
+//         CountTriggerWithPurgingTriggerExample.init();
 //        System.out.println(System.getProperties());
     }
 }

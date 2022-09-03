@@ -9,10 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="flink" />
         <module name="spring-data-jpa" />
+        <module name="spring-rest" />
         <module name="random-practice" />
         <module name="condutor-kafka" />
         <module name="udemy" />
-        <module name="spring-rest" />
+        <module name="demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
       <module name="spring-data-jpa" options="-parameters" />
       <module name="spring-rest" options="-parameters" />
     </option>
