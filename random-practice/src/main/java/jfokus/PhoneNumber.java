@@ -4,7 +4,6 @@ import com.google.common.base.MoreObjects;
 import com.google.common.collect.ComparisonChain;
 import lombok.Getter;
 import lombok.Setter;
-import org.checkerframework.checker.formatter.qual.Format;
 
 import java.util.Comparator;
 import java.util.Formattable;
