@@ -1,6 +1,9 @@
 package practice1;
 
+import com.uber.cadence.serviceclient.WorkflowServiceTChannel;
 import com.uber.cadence.worker.Worker;
+import practice1.cadence.WorkflowManager;
+
 
 public class MainApplication {
     public static final String CADENCE_DOMAIN="test-domain";
@@ -11,5 +14,8 @@ public class MainApplication {
 
         helloWorldWorker.registerWorkflowImplementationTypes(HelloWorldImpl.class);
         factory.start();
+
+        WorkflowManager workflowManager = new WorkflowManager();
+        workflowManager.startSayHelloJob();
     }
 }

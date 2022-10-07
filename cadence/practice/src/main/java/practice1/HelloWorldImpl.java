@@ -9,7 +9,6 @@ public class HelloWorldImpl implements IHelloWorld {
     public String sayHello(String name) {
         logger.info("Hello {}!", name);
 
-
         return "Hello "+ name+"!!";
     }
 }
