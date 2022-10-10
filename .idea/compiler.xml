@@ -9,10 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="flink" />
         <module name="spring-data-jpa" />
+        <module name="figuring-out" />
         <module name="practice" />
+        <module name="gcp" />
         <module name="spring-rest" />
         <module name="random-practice" />
         <module name="condutor-kafka" />
+        <module name="pocs" />
         <module name="udemy" />
         <module name="demo" />
       </profile>
