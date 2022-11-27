@@ -13,6 +13,7 @@
         <module name="practice" />
         <module name="gcp" />
         <module name="spring-rest" />
+        <module name="spring-boot-multiple-impl" />
         <module name="random-practice" />
         <module name="condutor-kafka" />
         <module name="pocs" />
@@ -27,6 +28,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="spring-boot-multiple-impl" options="-parameters" />
       <module name="spring-data-jpa" options="-parameters" />
       <module name="spring-rest" options="-parameters" />
     </option>
