@@ -15,6 +15,7 @@
         <module>spring-data-jpa</module>
         <module>spring-rest</module>
         <module>spring-boot-multiple-impl</module>
+        <module>spring-boot-configuration-and-beans</module>
     </modules>
 
     <properties>

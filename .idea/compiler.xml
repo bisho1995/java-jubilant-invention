@@ -7,18 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flink" />
         <module name="spring-data-jpa" />
-        <module name="figuring-out" />
         <module name="practice" />
-        <module name="gcp" />
         <module name="spring-rest" />
+        <module name="condutor-kafka" />
+        <module name="demo" />
+        <module name="spring-boot-configuration-and-beans" />
+        <module name="flink" />
+        <module name="figuring-out" />
+        <module name="gcp" />
         <module name="spring-boot-multiple-impl" />
         <module name="random-practice" />
-        <module name="condutor-kafka" />
         <module name="pocs" />
         <module name="udemy" />
-        <module name="demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +29,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="spring-boot-configuration-and-beans" options="-parameters" />
       <module name="spring-boot-multiple-impl" options="-parameters" />
       <module name="spring-data-jpa" options="-parameters" />
       <module name="spring-rest" options="-parameters" />
