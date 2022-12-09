@@ -15,6 +15,7 @@
         <module name="spring-boot-configuration-and-beans" />
         <module name="flink" />
         <module name="figuring-out" />
+        <module name="trial1" />
         <module name="gcp" />
         <module name="spring-boot-multiple-impl" />
         <module name="random-practice" />
