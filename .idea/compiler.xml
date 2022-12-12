@@ -16,6 +16,7 @@
         <module name="flink" />
         <module name="figuring-out" />
         <module name="trial1" />
+        <module name="di-plus-config-in-tests" />
         <module name="gcp" />
         <module name="spring-boot-multiple-impl" />
         <module name="random-practice" />
@@ -30,6 +31,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="di-plus-config-in-tests" options="-parameters" />
       <module name="spring-boot-configuration-and-beans" options="-parameters" />
       <module name="spring-boot-multiple-impl" options="-parameters" />
       <module name="spring-data-jpa" options="-parameters" />

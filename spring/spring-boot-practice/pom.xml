@@ -16,6 +16,7 @@
         <module>spring-rest</module>
         <module>spring-boot-multiple-impl</module>
         <module>spring-boot-configuration-and-beans</module>
+        <module>di-plus-config-in-tests</module>
     </modules>
 
     <properties>
