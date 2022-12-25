@@ -16,8 +16,10 @@
         <module name="flink" />
         <module name="figuring-out" />
         <module name="trial1" />
+        <module name="encryption" />
         <module name="gcp" />
         <module name="spring-boot-multiple-impl" />
+        <module name="enc1" />
         <module name="random-practice" />
         <module name="pocs" />
         <module name="udemy" />
@@ -25,6 +27,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jfokus" target="11" />
+      <module name="mod1" target="11" />
+      <module name="mod2" target="11" />
+      <module name="sb1" target="11" />
+      <module name="symm-asymm-enc-yt-1" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
