@@ -16,6 +16,7 @@
         <module>cadence</module>
         <module>cloud</module>
         <module>protobufspractice</module>
+        <module>spark</module>
     </modules>
 
     <properties>

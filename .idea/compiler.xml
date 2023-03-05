@@ -21,6 +21,7 @@
         <module name="spring-boot-multiple-impl" />
         <module name="random-practice" />
         <module name="pocs" />
+        <module name="spark_01" />
         <module name="udemy" />
       </profile>
     </annotationProcessing>
