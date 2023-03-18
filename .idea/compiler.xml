@@ -9,6 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-data-jpa" />
         <module name="practice" />
+        <module name="sb1" />
+        <module name="mod2" />
         <module name="spring-rest" />
         <module name="condutor-kafka" />
         <module name="demo" />
@@ -19,6 +21,7 @@
         <module name="di-plus-config-in-tests" />
         <module name="gcp" />
         <module name="spring-boot-multiple-impl" />
+        <module name="enc1" />
         <module name="random-practice" />
         <module name="pocs" />
         <module name="spark_01" />
@@ -32,11 +35,11 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
-      <module name="di-plus-config-in-tests" options="-parameters" />
-      <module name="spring-boot-configuration-and-beans" options="-parameters" />
-      <module name="spring-boot-multiple-impl" options="-parameters" />
-      <module name="spring-data-jpa" options="-parameters" />
-      <module name="spring-rest" options="-parameters" />
+      <module name="di-plus-config-in-tests" options="" />
+      <module name="spring-boot-configuration-and-beans" options="" />
+      <module name="spring-boot-multiple-impl" options="" />
+      <module name="spring-data-jpa" options="" />
+      <module name="spring-rest" options="" />
     </option>
   </component>
 </project>

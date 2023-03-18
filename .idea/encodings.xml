@@ -13,6 +13,10 @@
     <file url="file://$PROJECT_DIR$/cloud/gcp/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/encryption/enc1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/encryption/enc1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/encryption/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/encryption/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka/src/main/java" charset="UTF-8" />
@@ -33,6 +37,8 @@
     <file url="file://$PROJECT_DIR$/spark/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring-boot-practice/di-plus-config-in-tests/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring-boot-practice/di-plus-config-in-tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/spring-boot-practice/sb1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring/spring-boot-practice/sb1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring-boot-practice/spring-boot-configuration-and-beans/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring-boot-practice/spring-boot-configuration-and-beans/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring/spring-boot-practice/spring-boot-multiple-impl/src/main/java" charset="UTF-8" />

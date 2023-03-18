@@ -17,10 +17,7 @@
         <module>cloud</module>
         <module>protobufspractice</module>
         <module>encryption</module>
-        <module>symm-asymm-enc-yt-1</module>
-        <module>mod1</module>
         <module>encryption</module>
-        <module>mod2</module>
         <module>spring/spring-boot-practice/sb1</module>
         <module>encryption/enc1</module>
         <module>spark</module>
