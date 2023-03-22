@@ -27,6 +27,7 @@
         <module name="pocs" />
         <module name="spark_01" />
         <module name="udemy" />
+        <module name="avro" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

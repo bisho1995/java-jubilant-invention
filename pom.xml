@@ -22,6 +22,7 @@
         <module>encryption/enc1</module>
         <module>spark</module>
         <module>encryption/enc2</module>
+        <module>avro</module>
     </modules>
 
     <properties>
