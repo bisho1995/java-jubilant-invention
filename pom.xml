@@ -21,6 +21,7 @@
         <module>spring/spring-boot-practice/sb1</module>
         <module>encryption/enc1</module>
         <module>spark</module>
+        <module>encryption/enc2</module>
     </modules>
 
     <properties>
