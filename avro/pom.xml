@@ -45,6 +45,11 @@
             <artifactId>avro-maven-plugin</artifactId>
             <version>1.8.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>1.8.2</version>
+        </dependency>
     </dependencies>
 
 </project>
