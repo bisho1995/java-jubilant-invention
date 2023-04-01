@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-data-jpa" />
         <module name="practice" />
+        <module name="javaapis" />
         <module name="sb1" />
         <module name="mod2" />
         <module name="spring-rest" />

@@ -23,6 +23,7 @@
         <module>spark</module>
         <module>encryption/enc2</module>
         <module>avro</module>
+        <module>javaapis</module>
     </modules>
 
     <properties>
