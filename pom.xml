@@ -17,13 +17,14 @@
         <module>cloud</module>
         <module>protobufspractice</module>
         <module>encryption</module>
-        <module>encryption</module>
         <module>spring/spring-boot-practice/sb1</module>
         <module>encryption/enc1</module>
         <module>spark</module>
         <module>encryption/enc2</module>
         <module>avro</module>
         <module>javaapis</module>
+        <module>gson</module>
+        <module>mygson1</module>
     </modules>
 
     <properties>
